@@ -11,5 +11,8 @@
 
 <section class = "flex mt-16">
     <nav class = "w-3xs min-w-3xs sticky top-16 h-[calc(100vh-4rem)] bg-emerald-700 text-emerald-50 py-5 "><app-side-bar></app-side-bar></nav>
-    <main class = "p-5">Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/>Test <br/> Test </main> 
+    <main class = "p-5">
+        <input type="text" [(ngModel)]="name" placeholder="Enter your name" class="border border-gray-300 rounded px-2 py-1 mb-4 hover:border-emerald-500">
+        <h1 class="text-2xl font-bold">Hello, {{ name }}!</h1>
+    </main> 
 </section>
