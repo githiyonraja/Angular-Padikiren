@@ -17,7 +17,10 @@
     "@angular/forms": "^22.3.0",
     "@angular/platform-browser": "^22.3.0",
     "@angular/router": "^22.3.0",
+    "@tailwindcss/postcss": "^4.3.5",
+    "postcss": "^8.5.33",
     "rxjs": "~7.8.0",
+    "tailwindcss": "^4.3.5",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
@@ -28,5 +31,11 @@
     "prettier": "^3.8.1",
     "typescript": "~6.0.2",
     "vitest": "^5.0.0"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true,
+    "esbuild@0.28.2": true,
+    "lmdb@3.5.9": true,
+    "msgpackr-extract@3.0.7": true
   }
 }
