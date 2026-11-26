@@ -1,0 +1,12 @@
+@if (user) {
+    <p>Welcome, {{ user.name }}</p>
+}
+<form (ngSubmit)="onSubmit()" class = "flex flex-col gap-3">
+    <label class= "flex flex-col gap-1">Username
+        <input type="text" [(ngModel)]="username" required placeholder="Enter your username" class="px-2 border-2 border-gray-600 rounded-md">
+    </label>
+    <label>Password
+        <input type="password" [(ngModel)]="password" required placeholder="Enter your password" class="px-2 border-2 border-gray-600 rounded-md">
+    </label>
+    <button type="submit" class="bg-emerald-700 text-emerald-50 px-4 py-2 rounded-md hover:bg-emerald-800">Login</button>
+</form>
