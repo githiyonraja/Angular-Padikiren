@@ -25,4 +25,9 @@ export class App {
   OnLogin(credentials: LoginCredentials) {
     this.user.name = credentials.username;
   }
+
+  OnLogout() {
+    console.log('Logout event received in App component');
+    this.user.name = "";
+  }
 }

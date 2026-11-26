@@ -14,6 +14,8 @@ export class Heading {
 
   @Output() credentialsSubmitted = new EventEmitter<LoginCredentials>();
 
+  @Output() logout = new EventEmitter<void>();
+
   username = '';
   password = '';
 
@@ -22,5 +24,9 @@ export class Heading {
       username: this.username,
       password: this.password,
     });
+  }
+
+  onLogout() {
+    this.logout.emit();
   }
 }
