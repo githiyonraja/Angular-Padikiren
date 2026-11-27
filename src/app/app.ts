@@ -16,14 +16,14 @@ import { Counter } from './shared/components/counter/counter';
 export class App {
   protected readonly title = signal('app');
 
-  count: number= 0;
+  readonly count = signal(0);
 
   increment() {
-    this.count++;
+    this.count.update((n) => n + 1);
   }
 
   decrement(){
-    this.count--;
+    this.count.update((n) => n - 1);
   }
 
   heading = 'My App Heading';

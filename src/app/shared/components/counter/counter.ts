@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   imports: [],
@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
 })
 export class Counter {
 
-  @Input() counter!: number;
+  readonly counter = input<number>(0);
 
 }
