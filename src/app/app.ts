@@ -22,6 +22,10 @@ export class App {
     this.count++;
   }
 
+  decrement(){
+    this.count--;
+  }
+
   heading = 'My App Heading';
   user:User={
     id: 0, 
